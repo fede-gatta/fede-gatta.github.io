@@ -35,7 +35,7 @@
         <section>
             <h3>Contact</h3>
             <p>
-                Email: <a href="mailto:federico.gatta@example.com">federico.gatta@example.com</a>
+                Contact me: <a href="mailto:fede.gatta96@gmail.com">fede.gatta96@gmail.com</a>
             </p>
         </section>
     </main>
