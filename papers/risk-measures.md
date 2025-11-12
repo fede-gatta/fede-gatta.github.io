@@ -1,17 +1,10 @@
 ---
-layout: default
-title: "Risk Measures"
+layout: page
+title: Risk Measures
 ---
 
-# Risk Measures
+### *A High-Frequency Approach to Realized Risk Measures*
+We propose a method for estimating Value-at-Risk (VaR) and Expected Shortfall (ES) using high-frequency financial data, extending the Realized Quantile approach.
 
-### Paper 1: *A high-frequency approach to Realized Risk Measures*
-
-**Abstract:**  
-We propose a novel method (RRM) for estimating Value-at-Risk and Expected Shortfall using high-frequency data.  
-The approach extends the Realized Quantile methodology, incorporating subordinated processes and moving-average filtering to better capture volatility dynamics.
-
-**Links:**  
-- [📄 Journal link](#)  
-- [💻 GitHub repository](#)
+[📄 Journal Link](#) | [💻 GitHub Repository](#)
 

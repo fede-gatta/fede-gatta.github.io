@@ -1,13 +1,13 @@
 ---
-layout: default
-title: "Papers"
+layout: page
+title: Research Papers
 ---
 
 # Research Papers
 
-Here you can find my research work organized by topic:
+Explore my research categorized by topic:
 
-- [Risk Measures](risk-measures)
-- [Decentralized Finance](defi)
-- [Machine and Deep Learning](machine-learning)
+- [Risk Measures](./risk-measures.html)
+- [Decentralized Finance](./defi.html)
+- [Machine and Deep Learning](./machine-learning.html)
 

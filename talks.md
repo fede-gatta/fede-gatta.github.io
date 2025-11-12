@@ -1,15 +1,12 @@
 ---
-layout: default
-title: "Talks"
+layout: page
+title: Talks
 ---
 
 # Talks
 
-A selection of invited talks and conference presentations:
+A selection of my talks and presentations:
 
-- *“Realized Risk Measures in High-Frequency Settings”*, QuantFin Workshop 2024, Milan.
-- *“Decentralized Exchanges and Liquidity Strategies”*, DeFi Research Seminar, 2025.
-- *“Machine Learning for Predictive Maintenance”*, SNS Doctoral Seminar, 2023.
-
-More details and slides coming soon.
+- *Machine Learning in Financial Markets*, Workshop on Quantitative Finance (2024)
+- *Liquidity Dynamics in DeFi*, DLT Research Seminar, Scuola Normale Superiore (2025)
 
