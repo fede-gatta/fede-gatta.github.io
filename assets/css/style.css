@@ -1,0 +1,262 @@
+---
+# This empty front matter is required for Sass to process the file
+---
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap');
+
+// Define Variables
+$font-family-serif: 'Merriweather', serif;
+$font-family-sans: 'Lato', sans-serif;
+$bg-color: #f0f8ff; // Light Blue (AliceBlue)
+$footer-color: #d6eaf8; // Slightly darker blue
+$text-color: #333;
+$header-text-color: #ffffff; // White text for the header
+$link-color: #0056b3;
+$white: #ffffff;
+$content-width: 900px;
+
+// Global Resets & Body
+body {
+  font-family: $font-family-sans;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
+  font-weight: 700;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// -----------------------------------------------------------------------------
+// Header (Requirement c, d, e)
+// -----------------------------------------------------------------------------
+.site-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "/assets/img/header-bg.jpg" | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $footer-color;
+
+  .header-left-spacer {
+    width: 150px; // Matches profile pic width
+    flex-shrink: 0;
+  }
+
+  .header-center {
+    text-align: center;
+    color: $header-text-color;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+
+  .header-right {
+    flex-shrink: 0;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid $white;
+    object-fit: cover; // Prevents image from stretching
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+.site-nav {
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #ddd;
+  
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    position: relative;
+    
+    > a {
+      display: block;
+      padding: 1rem 1.5rem;
+      font-family: $font-family-sans;
+      font-weight: 700;
+      color: $text-color;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      
+      &:hover {
+        background-color: #f9f9f9;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Dropdown styles
+  .dropdown {
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $white;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+      
+      li a {
+        padding: 0.75rem 1.5rem;
+        display: block;
+        white-space: nowrap;
+        &:hover {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+    
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Page Content
+// -----------------------------------------------------------------------------
+.page-content {
+  padding: 2rem 0;
+}
+
+.page {
+  background-color: $white;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+// -----------------------------------------------------------------------------
+// Papers Page Layout (Inspired by quantamm.fi)
+// -----------------------------------------------------------------------------
+.paper-item {
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  h3 { // Paper Title
+    margin-top: 0;
+    font-size: 1.4rem;
+  }
+  
+  .authors {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .abstract {
+    background-color: #fdfdfd;
+    border-left: 3px solid $footer-color;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    
+    p {
+      margin: 0;
+    }
+  }
+  
+  .paper-links {
+    font-weight: 700;
+    font-size: 0.9rem;
+    
+    a {
+      margin-right: 1rem;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CV Page
+// -----------------------------------------------------------------------------
+.cv-embed {
+  width: 100%;
+  height: 90vh; // 90% of the viewport height
+  border: 1px solid #ccc;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: $link-color;
+  color: $white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  
+  &:hover {
+    background-color: darken($link-color, 10%);
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Footer (Requirement b)
+// -----------------------------------------------------------------------------
+.site-footer {
+  background-color: $footer-color;
+  color: #555;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  
+  p {
+    margin: 0.5rem 0;
+  }
+}

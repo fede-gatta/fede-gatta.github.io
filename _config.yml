@@ -1,0 +1,15 @@
+# Site settings
+title: Federico Gatta
+description: "Personal website of Federico Gatta, PhD Candidate in Computational Methods and Mathematical Models for Sciences and Finance."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://your-github-username.github.io" # Your site's base URL
+
+# Author/Owner
+author:
+  name: Federico Gatta
+  email: fede.gatta96@gmail.com
+  linkedin: federico-gatta-19na96
+  role: "PhD Candidate in Computational Methods and Mathematical Models for Sciences and Finance, Scuola Normale Superiore"
+
+# Build settings
+markdown: kramdown

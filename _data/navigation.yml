@@ -1,0 +1,18 @@
+- title: Home
+  url: /
+
+- title: Papers
+  url: /papers/
+  sublinks:
+    - title: Risk Measures
+      url: /papers/risk-measures/
+    - title: Decentralized Finance
+      url: /papers/defi/
+    - title: Machine & Deep Learning
+      url: /papers/ml-dl/
+
+- title: Talks
+  url: /talks/
+
+- title: CV
+  url: /cv/
