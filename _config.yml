@@ -8,8 +8,9 @@ author:
   email: "fede.gatta96@gmail.com"
   linkedin: "https://linkedin.com/in/federico-gatta-19na96"
 
-theme: minima
+# REMOVE the line below if it exists:
+# theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
