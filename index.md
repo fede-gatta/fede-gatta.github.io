@@ -13,7 +13,7 @@
                 <h1>Federico Gatta</h1>
                 <h2>PhD Candidate in Quantitative Finance</h2>
             </div>
-            <img src="images/profile.jpg" alt="Federico Gatta" class="profile-photo">
+            <img src="images/HeadShot.jpg" alt="Federico Gatta" class="profile-photo">
         </div>
     </header>
     <main>
