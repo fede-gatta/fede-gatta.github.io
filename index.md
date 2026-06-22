@@ -40,7 +40,7 @@
         </section>
     </main>
     <footer>
-        <p>© 2025 Federico Gatta — All rights reserved.</p>
+        <p>© 2026 Federico Gatta — All rights reserved.</p>
     </footer>
 </body>
 </html>
