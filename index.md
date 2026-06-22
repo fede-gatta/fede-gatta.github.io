@@ -11,7 +11,7 @@
         <div class="header-content">
             <div class="text-box">
                 <h1>Federico Gatta</h1>
-                <h2>PhD Candidate in Quantitative Finance</h2>
+                <h2>PhD Candidate in Computational Methods and Mathematical Models for Sciences and Finance</h2>
             </div>
             <img src="images/HeadShot.jpg" alt="Federico Gatta" class="profile-photo">
         </div>
@@ -20,9 +20,8 @@
         <section>
             <h3>About Me</h3>
             <p>
-                I am a PhD candidate in Quantitative Finance, focusing on Decentralized Exchanges,
-                systemic risk, and liquidity provision strategies. My research integrates
-                econometric analysis, DeFi data, and machine learning.
+                I am a PhD Candidate in Computational Methods and Mathematical Models for Sciences and Finance at Scuola Normale Superiore.
+                My research interests lie at the intersection of Quantitative Finance, Econometrics, and Machine Learning
             </p>
         </section>
         <section>
