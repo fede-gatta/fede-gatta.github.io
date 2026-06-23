@@ -1,5 +1,6 @@
 ---
 layout: page
+hide_title: true
 ---
 
 ## About Me
@@ -50,6 +51,19 @@ Overall, my research can be summarized as follows:
             <summary>View Abstract</summary>
             <div class="abstract-content">
                 Decentralized Exchanges (DEXs) are now a significant component of the financial world where billions of dollars are traded daily. Differently from traditional markets, which are typically based on Limit Order Books, DEXs typically work as Automated Market Makers, and, since the implementation of Uniswap v3, feature concentrated liquidity. By investigating the twenty-four most active pools in Uniswap v3 during 2023 and 2024, we empirically study how this structural change in the organization of the markets modifies the well-studied stylized facts of prices, liquidity, and order flow observed in traditional markets. We find a series of new statistical regularities in the distributions and cross-autocorrelation functions of these variables that we are able to associate either with the market structure (e.g., the execution of orders in blocks) or with the intense activity of Maximal Extractable Value searchers, such as Just-in-Time liquidity providers and sandwich attackers.
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="paper-item">
+    <h3>ENCODE-Ensemble neural combination for optimal dimensionality encoding in time-series forecasting</h3>
+    <div class="authors">F. Giampaolo, F. Gatta, E. Prezioso, S. Cuomo, M. Zhou, G. Fortino, F. Piccialli <br> <span style="font-size: 0.9em; color: #777;"><em>Information Fusion</em> (2023)</span></div>
+    <div class="abstract-container">
+        <details class="fancy-abstract">
+            <summary>View Abstract</summary>
+            <div class="abstract-content">
+                Nowadays, predictive models based on a time series are widely used in many fields, from geology to healthcare and from traffic management to industrial production. One of the most important tasks in machine and deep learning is designing predictive algorithms that provide increasingly reliable and accurate forecasts from a time series. This work proposes a novel ensemble approach to producing predictions in a multivariate framework. Its main idea is to reduce data dimensionality through an encoding technique, with the aim to extract useful information via single predictive procedures and then to gather all the processed data through a combiner to give the final forecast. In our framework, the combiner is composed of a hybrid neural architecture: a Convolutional Neural Network to extract local patterns from the predictions and a Recurrent Neural Network to infer information about the temporal patterns of the time series. Furthermore, a fully connected network is adopted to merge these two components and to provide the prediction. Extensive experiments on different datasets, both public and private, related to different applications have been carried out. Comparisons of the errors with conventional methods and state-of-the-art strategies confirm both accuracy and robustness of the proposed ensemble. Finally, we also show a comparison in terms of computational time, both in the hyperparameter optimization and forecasting tasks.
             </div>
         </details>
     </div>

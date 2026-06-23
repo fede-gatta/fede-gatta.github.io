@@ -169,6 +169,8 @@ a {
 
 .page {
   background-color: #fdf6e3; /* old paper color */
+  background-image: url('{{ "/assets/img/paper_texture.png" | relative_url }}');
+  background-blend-mode: multiply; /* Optional: blends texture with the base color nicely */
   padding: 2rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   border-radius: 5px;
