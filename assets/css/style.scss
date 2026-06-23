@@ -260,3 +260,78 @@ a {
     margin: 0.5rem 0;
   }
 }
+
+// -----------------------------------------------------------------------------
+// Fancy Enhancements
+// -----------------------------------------------------------------------------
+
+// Subtle horizontal rule
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  margin: 3rem 0;
+}
+
+// Interactive Fancy Abstract
+.abstract-container {
+  margin-top: 1rem;
+}
+
+.fancy-abstract {
+  background-color: #f8fbff;
+  border: 1px solid #e1eaf5;
+  border-left: 4px solid $link-color;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-color: #d0e1f9;
+  }
+  
+  summary {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    color: $link-color;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    list-style: none; // hides default marker in some browsers
+    display: flex;
+    align-items: center;
+    
+    &::-webkit-details-marker {
+      display: none; // hide default marker
+    }
+    
+    &::before {
+      content: '▶';
+      font-size: 0.8em;
+      margin-right: 0.5rem;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &[open] {
+    summary::before {
+      transform: rotate(90deg);
+    }
+    .abstract-content {
+      animation: fadeIn 0.4s ease;
+    }
+  }
+
+  .abstract-content {
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
