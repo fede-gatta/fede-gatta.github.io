@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Resume
+permalink: /resume/
 ---
 
 You can download my resume as a PDF by clicking the button below, or view it embedded on this page.

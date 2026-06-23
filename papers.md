@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Papers
+permalink: /papers/
 ---
 
 This page lists my research publications, preprints, and working papers, categorized by topic.

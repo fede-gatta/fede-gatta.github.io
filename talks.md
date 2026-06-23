@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Talks & Presentations
+permalink: /talks/
 ---
 
 Here is a list of my invited talks, conference presentations, and posters.
