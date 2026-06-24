@@ -43,11 +43,6 @@ a {
   max-width: $content-width;
   margin: 0 auto;
   padding: 0 1.5rem;
-  box-sizing: border-box;
-  
-  @media (max-width: 768px) {
-    padding: 0 1rem;
-  }
 }
 
 // -----------------------------------------------------------------------------
@@ -112,7 +107,7 @@ a {
     }
     
     // Once the user uploads header-bg-mobile.jpg, we can uncomment this:
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "/assets/img/header-bg-mobile.jpg" | relative_url }}');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "/assets/img/header-bg-mobile.jpg" | relative_url }}');
   }
 }
 
@@ -123,8 +118,6 @@ a {
   background-color: $white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border-bottom: 1px solid #ddd;
-  position: relative;
-  z-index: 10; // Ensure dropdown stays above page-content
   
   .nav-list {
     list-style: none;
@@ -150,22 +143,6 @@ a {
         background-color: #f9f9f9;
         text-decoration: none;
       }
-      
-      &.active {
-        background-color: #e5e5e5;
-        border-bottom: 3px solid $link-color;
-      }
-    }
-  }
-
-  // Mobile specific overrides for Navigation
-  @media (max-width: 768px) {
-    .nav-list {
-      flex-wrap: wrap;
-    }
-    .nav-item > a {
-      padding: 0.8rem 0.8rem;
-      font-size: 0.8rem;
     }
   }
 
@@ -214,11 +191,6 @@ a {
   padding: 2rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   border-radius: 5px;
-  box-sizing: border-box; // Prevents padding from causing horizontal overflow
-  
-  @media (max-width: 768px) {
-    padding: 1.5rem 1rem; // Reduce padding on mobile
-  }
 }
 
 // -----------------------------------------------------------------------------
@@ -381,32 +353,4 @@ hr {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-// -----------------------------------------------------------------------------
-// Interactive Particle Background
-// -----------------------------------------------------------------------------
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1; // Keep it perfectly behind all text and content
-  background-color: transparent;
-  pointer-events: auto;
-  
-  @media (max-width: 768px) {
-    display: none !important; // Disable completely on mobile to save battery and space
-  }
-}
-
-.site-header, .page-content, .site-footer {
-  position: relative;
-  z-index: 1; // Ensure everything sits above the particles
-}
-
-.site-nav {
-  position: relative;
-  z-index: 10; // Must be higher than page-content so dropdowns overlay it
 }
