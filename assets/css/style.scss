@@ -107,7 +107,7 @@ a {
     }
     
     // Once the user uploads header-bg-mobile.jpg, we can uncomment this:
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "/assets/img/header-bg-mobile.jpg" | relative_url }}');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "/assets/img/header-bg-mobile.jpg" | relative_url }}');
   }
 }
 
