@@ -92,6 +92,23 @@ a {
     object-fit: cover; // Prevents image from stretching
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
+
+  // Mobile specific overrides
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    
+    .header-left-spacer {
+      display: none;
+    }
+    
+    .header-center {
+      margin-bottom: 1.5rem;
+    }
+    
+    // Once the user uploads header-bg-mobile.jpg, we can uncomment this:
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "/assets/img/header-bg-mobile.jpg" | relative_url }}');
+  }
 }
 
 // -----------------------------------------------------------------------------
