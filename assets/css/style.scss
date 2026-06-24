@@ -380,3 +380,26 @@ hr {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+// -----------------------------------------------------------------------------
+// Interactive Particle Background
+// -----------------------------------------------------------------------------
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; // Keep it perfectly behind all text and content
+  background-color: transparent;
+  pointer-events: auto;
+  
+  @media (max-width: 768px) {
+    display: none !important; // Disable completely on mobile to save battery and space
+  }
+}
+
+.site-header, .site-nav, .page-content, .site-footer {
+  position: relative;
+  z-index: 1; // Ensure everything sits above the particles
+}
