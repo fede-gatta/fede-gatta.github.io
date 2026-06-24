@@ -44,7 +44,6 @@ a {
   margin: 0 auto;
   padding: 0 1.5rem;
   box-sizing: border-box;
-  pointer-events: auto; // Re-enable clicks for actual content
   
   @media (max-width: 768px) {
     padding: 0 1rem;
@@ -124,6 +123,8 @@ a {
   background-color: $white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 10; // Ensure dropdown stays above page-content
   
   .nav-list {
     list-style: none;
@@ -204,7 +205,6 @@ a {
 // -----------------------------------------------------------------------------
 .page-content {
   padding: 2rem 0;
-  pointer-events: none; // Allow clicks to pass through empty margins to particles
 }
 
 .page {
