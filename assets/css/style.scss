@@ -44,6 +44,7 @@ a {
   margin: 0 auto;
   padding: 0 1.5rem;
   box-sizing: border-box;
+  pointer-events: auto; // Re-enable clicks for actual content
   
   @media (max-width: 768px) {
     padding: 0 1rem;
@@ -203,6 +204,7 @@ a {
 // -----------------------------------------------------------------------------
 .page-content {
   padding: 2rem 0;
+  pointer-events: none; // Allow clicks to pass through empty margins to particles
 }
 
 .page {
