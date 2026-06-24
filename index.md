@@ -11,7 +11,7 @@ I am a PhD candidate in Computational Methods and Mathematical Models for Scienc
 
 ## Research Interest
 
-My research sits at the intersection of risk measures, decentralized finance, market microstructure, and machine learning. Over the years, I have collaborated with a diverse network of colleagues. Following my Master's degree, I served as a research fellow in the Mathematical mOdelling and Data AnaLysis (M.O.D.A.L.) laboratory, where I worked on deep learning approaches for time series analysis. Subsequently, I moved to Pisa to pursue my PhD. During my doctoral studies, I spent time at the University of Toronto as an International Visiting Graduate Student.
+My research sits at the intersection of risk measures, decentralized finance, market microstructure, and machine learning. Over the years, I have collaborated with a diverse network of colleagues. Following my Master's degree in Math at the University of Napoli Federico II, I served as a research fellow in the Mathematical mOdelling and Data AnaLysis (M.O.D.A.L.) laboratory, where I worked on deep learning approaches for time series analysis. Subsequently, I moved to Pisa to pursue my PhD. During my doctoral studies, I spent time at the University of Toronto as an International Visiting Graduate Student.
 Overall, my research can be summarized as follows:
 
 * **Decentralized Finance** Microstructural analysis of the main standards and protocols in this space, with a specific focus on decentralized exchanges.
@@ -24,7 +24,7 @@ Overall, my research can be summarized as follows:
 
 * **Honorable Mention Award - FinteQC**, 2026. My paper "Deviations from Tradition: Stylized Facts in the Era of DeFi" has been awarded an Honorable Mention in the Student Category by the Scientific Committee of the Canadian Conference on Fintech (FinteQC 2026).
 * **Winner of the SIAG/FME Code Quest**, 2024. The competition combined two FinTech themes: Decentralized Finance and Automated Asset Management. Over 120 teams from around the world signed up for the competition.
-* **Buon Compleanno Federico II Award** for academic excellence, 2020.
+* **Buon Compleanno Federico II Award**, 2020. The award is given by the University of Naples Federico II for the excellence of cursus studiorum.
 
 <hr>
 

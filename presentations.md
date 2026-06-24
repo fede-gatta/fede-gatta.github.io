@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Talks
-permalink: /talks/
+title: Presentations
+permalink: /presentations/
 ---
 
 Here is a list of my conference presentations.
