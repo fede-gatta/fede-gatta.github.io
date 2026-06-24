@@ -401,7 +401,12 @@ hr {
   }
 }
 
-.site-header, .site-nav, .page-content, .site-footer {
+.site-header, .page-content, .site-footer {
   position: relative;
   z-index: 1; // Ensure everything sits above the particles
+}
+
+.site-nav {
+  position: relative;
+  z-index: 10; // Must be higher than page-content so dropdowns overlay it
 }
