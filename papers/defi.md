@@ -4,8 +4,6 @@ title: Decentralized Finance
 permalink: /papers/defi/
 ---
 
-## Decentralized Finance
-
 <div class="paper-item">
   <h3>Deviations from Tradition: Stylized Facts in the Era of DeFi</h3>
   <p class="authors">Daniele Maria Di Nosse, Federico Gatta, Fabrizio Lillo, Sebastian Jaimungal</p>

@@ -4,8 +4,6 @@ title: Risk Measures
 permalink: /papers/risk-measures/
 ---
 
-## Risk Measures
-
 <div class="paper-item">
   <h3>A high-frequency approach to Realized Risk Measures</h3>
   <p class="authors">Federico Gatta, Fabrizio Lillo, Piero Mazzarisi</p>

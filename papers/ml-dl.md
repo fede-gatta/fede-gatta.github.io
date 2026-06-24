@@ -4,8 +4,6 @@ title: Machine & Deep Learning
 permalink: /papers/ml-dl/
 ---
 
-## Machine & Deep Learning
-
 <div class="paper-item">
   <h3>ENCODE-Ensemble neural combination for optimal dimensionality encoding in time-series forecasting</h3>
   <p class="authors">Fabio Giampaolo, Federico Gatta, Edoardo Prezioso, Salvatore Cuomo, MengChu Zhou, Giancarlo Fortino, Francesco Piccialli</p>
