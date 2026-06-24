@@ -43,6 +43,11 @@ a {
   max-width: $content-width;
   margin: 0 auto;
   padding: 0 1.5rem;
+  box-sizing: border-box;
+  
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -146,6 +151,17 @@ a {
     }
   }
 
+  // Mobile specific overrides for Navigation
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-wrap: wrap;
+    }
+    .nav-item > a {
+      padding: 0.8rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+
   // Dropdown styles
   .dropdown {
     .dropdown-menu {
@@ -191,6 +207,11 @@ a {
   padding: 2rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   border-radius: 5px;
+  box-sizing: border-box; // Prevents padding from causing horizontal overflow
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem; // Reduce padding on mobile
+  }
 }
 
 // -----------------------------------------------------------------------------
