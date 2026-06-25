@@ -309,6 +309,106 @@ a {
 }
 
 // -----------------------------------------------------------------------------
+// Timeline Carousel
+// -----------------------------------------------------------------------------
+.timeline-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.timeline-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+  gap: 20px;
+  
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.timeline-card {
+  flex: 0 0 300px; /* Fixed width for each card */
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  scroll-snap-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* This makes any photo fit perfectly without stretching */
+  }
+}
+
+.timeline-content {
+  padding: 1.5rem;
+  
+  .timeline-date {
+    font-weight: 700;
+    color: $link-color;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-family: $font-family-serif;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+}
+
+.timeline-btn {
+  background-color: $link-color;
+  color: $white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: darken($link-color, 10%);
+  }
+  
+  &.prev-btn {
+    left: -20px;
+  }
+  &.next-btn {
+    right: -20px;
+  }
+  
+  @media (max-width: 768px) {
+    display: none; /* Hide arrows on mobile where users can just swipe */
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Fancy Enhancements
 // -----------------------------------------------------------------------------
 
