@@ -113,7 +113,7 @@
       const isAtLeft = carousel.scrollLeft <= 0;
       const isAtRight = Math.ceil(carousel.scrollLeft + carousel.clientWidth) >= carousel.scrollWidth - 1;
 
-      const sensitivity = 3; // Increase this number to make scrolling faster
+      const sensitivity = 2; // Increase this number to make scrolling faster
       
       if (isScrollingDown && !isAtRight) {
         // Scrolling down -> move timeline right
