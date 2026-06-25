@@ -321,11 +321,13 @@ a {
 .timeline-carousel {
   display: flex;
   overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding: 1rem 0;
   gap: 20px;
+  
+  @media (max-width: 768px) {
+    scroll-snap-type: x mandatory;
+  }
   
   /* Hide scrollbar */
   -ms-overflow-style: none;
