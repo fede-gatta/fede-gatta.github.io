@@ -339,7 +339,7 @@ a {
 
 .timeline-card {
   flex: 0 0 300px; /* Fixed width for each card */
-  background-color: $bg-color;
+  background-color: $footer-color; /* Using the darker footer blue to ensure it doesn't look white */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   scroll-snap-align: center;
