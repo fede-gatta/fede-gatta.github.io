@@ -75,11 +75,61 @@
   const buttonLeft = document.getElementById('slideBack');
   const carousel = document.getElementById('timelineCarousel');
 
-  // Using approximately the width of one card + gap (300 + 20)
+  // Arrow click scrolling
   buttonRight.onclick = function () {
     carousel.scrollBy({ left: 320, behavior: 'smooth' });
   };
   buttonLeft.onclick = function () {
     carousel.scrollBy({ left: -320, behavior: 'smooth' });
   };
+
+  // Update button visibility/opacity
+  function updateButtons() {
+    const isAtLeft = carousel.scrollLeft <= 0;
+    // Add 1px tolerance for fractional scaling
+    const isAtRight = Math.ceil(carousel.scrollLeft + carousel.clientWidth) >= carousel.scrollWidth - 1;
+    
+    if (isAtLeft) {
+      buttonLeft.style.opacity = '0.3';
+      buttonLeft.style.cursor = 'default';
+    } else {
+      buttonLeft.style.opacity = '1';
+      buttonLeft.style.cursor = 'pointer';
+    }
+    
+    if (isAtRight) {
+      buttonRight.style.opacity = '0.3';
+      buttonRight.style.cursor = 'default';
+    } else {
+      buttonRight.style.opacity = '1';
+      buttonRight.style.cursor = 'pointer';
+    }
+  }
+
+  // Mouse wheel horizontal scrolling logic
+  carousel.addEventListener('wheel', function(e) {
+    if (e.deltaY !== 0) {
+      const isScrollingDown = e.deltaY > 0;
+      const isAtLeft = carousel.scrollLeft <= 0;
+      const isAtRight = Math.ceil(carousel.scrollLeft + carousel.clientWidth) >= carousel.scrollWidth - 1;
+
+      if (isScrollingDown && !isAtRight) {
+        // Scrolling down -> move timeline right
+        e.preventDefault();
+        carousel.scrollLeft += e.deltaY;
+      } else if (!isScrollingDown && !isAtLeft) {
+        // Scrolling up -> move timeline left
+        e.preventDefault();
+        carousel.scrollLeft += e.deltaY;
+      }
+      // If at boundary, preventDefault is NOT called, so normal vertical page scroll happens
+    }
+  }, { passive: false }); // passive: false is required to allow e.preventDefault()
+
+  // Listeners to update button state
+  carousel.addEventListener('scroll', updateButtons);
+  window.addEventListener('resize', updateButtons);
+  
+  // Initial setup after DOM loads and fonts render
+  setTimeout(updateButtons, 100);
 </script>
