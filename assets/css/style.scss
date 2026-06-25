@@ -406,7 +406,17 @@ a {
   }
   
   @media (max-width: 768px) {
-    display: none; /* Hide arrows on mobile where users can just swipe */
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+
+    &.prev-btn {
+      left: -5px;
+    }
+
+    &.next-btn {
+      right: -5px;
+    }
   }
 }
 
