@@ -113,14 +113,16 @@
       const isAtLeft = carousel.scrollLeft <= 0;
       const isAtRight = Math.ceil(carousel.scrollLeft + carousel.clientWidth) >= carousel.scrollWidth - 1;
 
+      const sensitivity = 3; // Increase this number to make scrolling faster
+      
       if (isScrollingDown && !isAtRight) {
         // Scrolling down -> move timeline right
         e.preventDefault();
-        carousel.scrollLeft += e.deltaY;
+        carousel.scrollLeft += (e.deltaY * sensitivity);
       } else if (!isScrollingDown && !isAtLeft) {
         // Scrolling up -> move timeline left
         e.preventDefault();
-        carousel.scrollLeft += e.deltaY;
+        carousel.scrollLeft += (e.deltaY * sensitivity);
       }
       // If at boundary, preventDefault is NOT called, so normal vertical page scroll happens
     }
