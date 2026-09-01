@@ -1,6 +1,6 @@
 # Site settings
 title: Federico Gatta
-description: "Personal website of Federico Gatta, PhD Candidate in Computational Methods and Mathematical Models for Sciences and Finance."
+description: "Hi, I'm Federico Gatta. Welcome to my personal website! I am a PhD Candidate in Computational Methods and Mathematical Models for Sciences and Finance."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fede-gatta.github.io" # Your site's base URL
 
